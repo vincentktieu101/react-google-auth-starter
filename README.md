@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This is some starter code in React with Google Auth
 
-## Getting Started
+# Adding code to Github
+For new repos, you can fork into a new Github repository by clicking "Fork" at the top of this screen.
 
-First, run the development server:
+For existing repos, add a starter branch into your local .git file by doing these commands.
+1) "git remote add starter https://github.com/vincentktieu101/ReactGoogleAuthStarter.git"
+2) "git pull starter master --allow-unrelated-histories"
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+You need the flag "--allow-unrelated-histories" if you have a README.md in your existing repo. There will then be a merge conflict where you must resolve by editing the README.md accordingly. Finally...
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3) push your code to Github!
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Adding Google Authentication
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You should now have an instance of the app running on "localhost:3000/". Awesome! You may now be wondering why the app looks so bare-bones. You aren't even able to click on "Login."
 
-## Learn More
+The next step to setup the "client_id" for your app in the ".env". Go to this link: https://console.cloud.google.com/apis/credentials and create a project. In the OAuth consent screen, you should set the user type to "external." Now go ahead to the "credentials" screen and add a new "OAuth Client ID."
 
-To learn more about Next.js, take a look at the following resources:
+**When adding an "OAuth Client ID," add it for a "web application" and remember to set the "Authorized JavaScript origins" and "Authorized redirect URIs" to "http://localhost:3000" and "https://localhost:3000".**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+In your folder, copy a file called ".env.SAMPLE" into ".env". Finally add your "client_id" into your ".env" file and do "npm run start". You should now have the React app running locally on your computer!
