@@ -1,6 +1,6 @@
 # This is some starter code in React with Google Auth
 
-![Screen Shot 2024-02-21 at 1 01 06 AM](https://github.com/vincentktieu101/react-google-auth-starter/assets/46038043/590eb813-0fb3-49ea-9b9b-1dc188856443)
+![Screenshot 2024-03-03 at 1 15 54 AM](https://github.com/vincentktieu101/react-google-auth-starter/assets/46038043/1aa76be7-48ae-4233-b932-2058b60af70e)
 
 If you don't add an API key for Google Authentication, you'll see a blank screen because it's loading.
 
