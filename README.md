@@ -11,6 +11,9 @@ You need the flag "--allow-unrelated-histories" if you have a README.md in your 
 
 3) push your code to Github!
 
+# Video
+I made a video of how to set up React in CRA while I was a teaching assistant at UCSB. This video is a little outdated but should still be useful: https://www.youtube.com/watch?v=XZceEXlYC1w
+
 # Adding Google Authentication
 
 You should now have an instance of the app running on "localhost:3000/". Awesome! You may now be wondering why the app looks so bare-bones. You aren't even able to click on "Login."
