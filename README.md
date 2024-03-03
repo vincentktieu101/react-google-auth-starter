@@ -4,7 +4,7 @@
 For new repos, you can fork into a new Github repository by clicking "Fork" at the top of this screen.
 
 For existing repos, add a starter branch into your local .git file by doing these commands.
-1) "git remote add starter https://github.com/vincentktieu101/ReactGoogleAuthStarter.git"
+1) "git remote add starter [https://github.com/vincentktieu101/ReactGoogleAuthStarter.git](https://github.com/vincentktieu101/react-google-auth-starter.git)"
 2) "git pull starter master --allow-unrelated-histories"
 
 You need the flag "--allow-unrelated-histories" if you have a README.md in your existing repo. There will then be a merge conflict where you must resolve by editing the README.md accordingly. Finally...
